@@ -14,7 +14,8 @@ namespace AvisFormation.Web.ViewModels
         public double MoyenneAvis { get; set; }
         public int NombreAvis { get; set; }
         public bool EstPopulaire { get; set; }
+        public List<Avis> Avis { get; set; } = new List<Avis>();
+         public List<FormationViewModel>FormationSimilaires { get; set; } = new List<FormationViewModel>();
 
-        
     }
 }

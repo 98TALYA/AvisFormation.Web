@@ -21,5 +21,6 @@ namespace AvisFormation.Data.Entities
         [ForeignKey("Formation")]
         public int FormationId { get; set; }
         public Formation Formation { get; set; }
+        public string UserId { get; set; }  
     }
 }

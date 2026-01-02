@@ -32,7 +32,7 @@
                 <div class="card shadow-sm h-100 border-0 formation-card">
 
                     <!-- Image -->
-                    <img src="@f.ImageURL"
+                    <img src="/images/@f.ImageURL"
                          class="card-img-top rounded-top"
                          style="height:220px; object-fit:cover;" />
 
@@ -80,7 +80,7 @@
                         <p class="fs-5 fw-bold text-primary">@f.Prix MAD</p>
 
                         <!-- Button -->
-                        <a href="/Formation/Details/@f.Id"
+                        <a href="/Formation/DetailsFormation/@f.Id"
                            class="btn btn-outline-primary w-100">
                             Voir les détails
                         </a>
@@ -139,7 +139,7 @@
         {
             <div class="col-md-4">
                 <div class="card shadow-sm border-success h-100">
-                    <img src="@f.ImageURL" class="card-img-top" style="height:200px; object-fit:cover;">
+                    <img src="/images/@f.ImageURL" class="card-img-top" style="height:200px; object-fit:cover;">
                     <div class="card-body">
 
                         <h5 class="fw-bold">@f.Titre</h5>
@@ -163,7 +163,7 @@
 
                         <p class="mt-2"><strong>@f.Prix MAD</strong></p>
 
-                        <a href="/Formation/Details/@f.Id" class="btn btn-success w-100">
+                        <a href="/Formation/DetailsFormation/@f.Id" class="btn btn-success w-100">
                             Voir les détails
                         </a>
                     </div>
@@ -181,13 +181,13 @@
             <div class="col-md-4">
                 <div class="card shadow-sm h-100 border-warning">
 
-                    <img src="@f.ImageURL" class="card-img-top" style="height:200px; object-fit:cover;">
+                    <img src="/images/@f.ImageURL" class="card-img-top" style="height:200px; object-fit:cover;">
 
                     <div class="card-body">
                         <h5 class="fw-bold">@f.Titre</h5>
                         <p class="text-muted small">@f.NombreAvis avis</p>
 
-                        <a href="/Formation/Details/@f.Id"
+                        <a href="/Formation/DetailFormation/@f.Id"
                            class="btn btn-outline-warning w-100">
                             Voir plus
                         </a>

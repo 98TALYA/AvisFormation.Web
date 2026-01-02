@@ -19,5 +19,19 @@ namespace AvisFormation.Logic
         {
             return _context.Formations.Include(f => f.Avis).ToList();
         }
+        public Formation GetById(int id)
+        {
+            var formation = _context.Formations.Find(id);
+            if (formation != null)
+            {
+
+                return _context.Formations.Include(f => f.Avis).FirstOrDefault(f => f.Id == id);
+            }
+            else
+            {
+                return null;
+            }
+
+        }
     }
 }
